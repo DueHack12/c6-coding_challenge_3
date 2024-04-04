@@ -10,6 +10,7 @@ input.onButtonPressed(Button.A, function () {
             . # . # .
             # . . . #
             `)
+        music.play(music.stringPlayable("F E D C - - - - ", 120), music.PlaybackMode.UntilDone)
     } else if (num == 2) {
         basic.showLeds(`
             . . . . .
@@ -18,6 +19,7 @@ input.onButtonPressed(Button.A, function () {
             # . # . .
             . # . . .
             `)
+        music.play(music.stringPlayable("F C5 - - - - - - ", 120), music.PlaybackMode.UntilDone)
     } else if (num == 3) {
         basic.showLeds(`
             . # # # .
@@ -26,6 +28,7 @@ input.onButtonPressed(Button.A, function () {
             . . . # .
             . . # . .
             `)
+        music.play(music.stringPlayable("D D D D - - - - ", 120), music.PlaybackMode.UntilDone)
     } else if (num == 4) {
         basic.showString("Ask later")
     } else if (num == 5) {
@@ -36,10 +39,11 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showLeds(`
-        . . . . .
-        . . . . #
-        . . . # .
-        # . # . .
-        . # . . .
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
         `)
+    music.play(music.stringPlayable("F E D C - - - - ", 120), music.PlaybackMode.UntilDone)
 })
