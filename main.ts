@@ -18,8 +18,9 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("Maybe?")
         music.play(music.stringPlayable("D D D D - - - - ", 120), music.PlaybackMode.UntilDone)
     }
+    basic.pause(2000)
+    basic.clearScreen()
 })
-// rigged yes
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     if (num == 1) {
@@ -30,7 +31,6 @@ input.onButtonPressed(Button.B, function () {
             # # . # #
             . . . . .
             `)
-        basic.showString("Ask later")
         music.play(music.stringPlayable("F E D C - - - - ", 120), music.PlaybackMode.UntilDone)
     } else if (num == 2) {
         basic.showLeds(`
